@@ -17,11 +17,15 @@ The projects range from beginner to intermediate level and are perfect for learn
 Here’s the list of projects in this repository (to be updated as more projects are added):
 
 1. **Accordion** - A collapsible UI component to show/hide content.
-2. *(More projects coming soon!)*
+2. **Rating** - A simple star-based rating system.
+3. *(More projects coming soon!)*
 
 ---
 
 ## 📜 Project 1: Accordion
+
+![image](https://github.com/user-attachments/assets/62c9b97c-61e3-4fcd-80b0-eff2773f2535)
+
 
 ### Overview
 The **Accordion** component is the first project in this repository. An accordion is a UI element that allows users to expand and collapse sections of content, making it ideal for FAQs, menus, or any content that needs to be organized in a compact, user-friendly way.
@@ -35,6 +39,24 @@ In this project, I created a simple accordion using **HTML**, **CSS**, and **Jav
 - **Single Selection**: Only one section can be open at a time (with an option to enable multi-selection in the UI).
 - **Responsive Design**: The accordion is styled to be responsive and visually appealing.
 - **Interactive UI**: Includes hover effects and a clean design inspired by modern web applications.
+
+---
+
+## 📜 Project 2: Rating
+
+![image](https://github.com/user-attachments/assets/fc83d6e7-5d26-4ae4-ae6d-fac35afcdfea)
+
+
+### Overview
+The **Rating** component is the second project in this repository. It allows users to provide feedback by selecting a rating (1 to 5 stars). This UI feature is widely used in e-commerce websites, review systems, and applications requiring user input for satisfaction or performance.
+
+---
+
+### Features
+- **Interactive Rating System**: Users can click on stars to select a rating.
+- **Real-Time Feedback**: Displays the selected rating dynamically.
+- **Hover Effects**: Highlights stars during hover for better visual feedback.
+- **Responsive Design**: Ensures the rating system looks good on all devices.
 
 ---
 
