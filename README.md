@@ -18,7 +18,8 @@ Here’s the list of projects in this repository (to be updated as more projects
 
 1. **Accordion** - A collapsible UI component to show/hide content.
 2. **Rating** - A simple star-based rating system.
-3. *(More projects coming soon!)*
+3. **Random Color Generator** - A tool to generate random colors with HEX and RGB codes.
+4. *(More projects coming soon!)*
 
 ---
 
@@ -57,6 +58,25 @@ The **Rating** component is the second project in this repository. It allows use
 - **Real-Time Feedback**: Displays the selected rating dynamically.
 - **Hover Effects**: Highlights stars during hover for better visual feedback.
 - **Responsive Design**: Ensures the rating system looks good on all devices.
+
+---
+
+
+## 📜 Project 3: Random Color Generator
+![image](https://github.com/user-attachments/assets/18a24225-7c7a-4537-9ac6-d36da04c7b55)
+
+### Overview
+The **Random Color Generator** is the third project in this repository. This project provides a simple and interactive tool for generating random colors, displaying their HEX and RGB codes, and allowing users to switch between the two formats. It’s a practical utility for designers, developers, or anyone needing quick access to random color codes for their projects.
+
+In this project, I built the front-end using **HTML**, **CSS**, and **JavaScript** to handle the color generation logic and UI updates. The plan is to integrate it with a **Spring Boot** backend in the future to potentially save generated colors or fetch color palettes via API endpoints.
+
+---
+
+### Features
+- **Random Color Generation**: Click the "Random Color" button to generate a new color and update the background of the display area.
+- **HEX and RGB Codes**: Displays the generated color in both HEX and RGB formats, with buttons to toggle between the two.
+- **Interactive UI**: Buttons are styled with distinct colors (orange for "Random Color," blue for "HEX Code," and green for "RGB Code") for easy identification.
+- **Responsive Design**: The layout is clean and responsive, ensuring usability across different devices.
 
 ---
 
