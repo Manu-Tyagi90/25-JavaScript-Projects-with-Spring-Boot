@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Load More Button</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      max-width: 600px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    div {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .title {
+      color: #5c6ac4;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+
+    #btn {
+      background: #5c6ac4;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #btn:hover {
+      background: #414da0;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      #btn {
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+    }
+
+
+    div {
+      font-size: 16px;
+    }
+
+  </style>
+
+  <body>
+    <h1 class="title">Project 4 - Load More</h1>
+    <div id="container"></div>
+    <button onclick="loadMore()" id="btn" style="background: lightblue">
+      Load More
+    </button>
+    <script>
+      let i = 1;
+      function loadMore() {
+        let con = i;
+        for (; i < con + 5 && i <= 40; i++) {
+          let para = document.createElement("div");
+          para.textContent = "Element" + i;
+          document.getElementById("container").appendChild(para);
+        }
+
+        if (i > 40) {
+          document.getElementById("btn").style.display = "none";
+        }
+      }
+
+      document.body.onload = loadMore;
+    </script>
+  </body>
+</html>
